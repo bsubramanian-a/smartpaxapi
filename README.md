@@ -1,2 +1,2 @@
-# smartpax
+# smartpax api
 smartpax api
