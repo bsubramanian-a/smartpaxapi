@@ -27,7 +27,7 @@ export class Item extends Model<Item> {
 
     @Column({
         type: DataType.ENUM,
-        values: ['admin', 'user'],
+        values: ['folder', 'dashboard','dataset','workspace','chart'],
         allowNull: false,
     })
     item_type: string;

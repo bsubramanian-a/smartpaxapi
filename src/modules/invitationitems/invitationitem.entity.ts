@@ -11,5 +11,4 @@ export class InvitationItem extends Model<InvitationItem> {
     @ForeignKey(() => Invitation)
     @Column
     invitation_id: number;
-
 }
