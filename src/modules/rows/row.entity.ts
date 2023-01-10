@@ -3,7 +3,7 @@ import { Invitation } from '../invitations/invitation.entity';
 import { Item } from '../items/item.entity';
 
 @Table
-export class Row extends Model<Row> {
+export class GRow extends Model<GRow> {
     @Column({
         type: DataType.STRING,
         allowNull: false,
