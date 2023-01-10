@@ -36,6 +36,6 @@ export class Chart extends Model<Chart> {
     //--------------------
 
     @HasMany(() => ChartSetting)
-    chart_settings: ChartSetting[]
+    chartsettings: ChartSetting[]
 
 }
