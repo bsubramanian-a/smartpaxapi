@@ -30,10 +30,9 @@ import { ChartsModule } from './modules/charts/charts.module';
 import { ChartsettingsModule } from './modules/chartsettings/chartsettings.module';
 import { ChartsettinggroupsModule } from './modules/chartsettinggroups/chartsettinggroups.module';
 import { BenchmarksModule } from './modules/benchmarks/benchmarks.module';
-
-
 @Module({
-  imports: [DatabaseModule, ConfigModule.forRoot({isGlobal:true}), UsersModule, InvitationsModule, ItemsModule, InvitationitemsModule, GroupsModule, ColumnsModule, DefaultcolumnsModule, ColumnstatusesModule, ColumnvaluesModule, RowsModule, ColumndropdownsModule, ColumnpeopleModule, DefaultcolumndropdownsModule, DefaultcolumnpeopleModule, DefaultcolumnstatusModule, DropdownModule, SortModule, FilterModule, PermissionModule, ChartcategoriesModule, CharttypesModule, ChartsModule, ChartsettingsModule, ChartsettinggroupsModule, BenchmarksModule],
+  imports: [DatabaseModule, ConfigModule.forRoot({isGlobal:true}), UsersModule, InvitationsModule, ItemsModule, InvitationitemsModule, GroupsModule, ColumnsModule, DefaultcolumnsModule, ColumnstatusesModule, ColumnvaluesModule, RowsModule, ColumndropdownsModule, ColumnpeopleModule, DefaultcolumndropdownsModule, DefaultcolumnpeopleModule, DefaultcolumnstatusModule, DropdownModule, SortModule, FilterModule, PermissionModule, ChartcategoriesModule, CharttypesModule, ChartsModule, ChartsettingsModule, ChartsettinggroupsModule, BenchmarksModule
+],
   controllers: [AppController],
   providers: [AppService, ChartcategoriesService, CharttypesService],
 })
