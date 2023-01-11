@@ -31,7 +31,8 @@ export class UsersService {
     return `This action removes a #${id} user`;
   }
 
-  async findOneByUserId(id: string): Promise<User> {  
-    return await this.usersRepository.findOne<any>({ where: { user_id:id } });
+  async findOneByUserId(user_id: string): Promise<User> {  
+    const returnedRes:any = await this.usersRepository.findOne<User>({ where: { user_id } })
+    return returnedRes;
   }
 }
