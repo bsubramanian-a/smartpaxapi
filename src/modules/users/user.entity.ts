@@ -14,50 +14,50 @@ export class User extends Model<User> {
         allowNull: false,
         unique: true
     })
-    user_id: string;
+    user_id?: string;
 
     @Column({
         type: DataType.STRING,
         allowNull: false,
     })
-    firstname: string;
+    firstname?: string;
 
     @Column({
         type: DataType.STRING,
         allowNull: false,
     })
-    lastname: string;
+    lastname?: string;
 
     @Column({
         type: DataType.STRING,
         unique: true,
         allowNull: false,
     })
-    email: string;
+    email?: string;
 
     @Column({
         type: DataType.ENUM,
         values: ['admin', 'user'],
         allowNull: false,
     })
-    user_type: string;
+    user_type?: string;
 
     @HasMany(() => Invitation)
-    invitations: Invitation[]
+    invitations?: Invitation[]
 
     @HasMany(() => Item)
-    items: Item[]
+    items?: Item[]
 
     @HasMany(() => UPermission)
-    permissions: UPermission[]
+    permissions?: UPermission[]
 
     //----------------------many to many
     @BelongsToMany(() => GColumn, () => CPeople)
-    cpeople: GColumn[];
+    cpeople?: GColumn[];
     //--------------------
 
     //----------------------many to many
     @BelongsToMany(() => GColumn, () => DColumnPeople)
-    dcpeople: GColumn[];
+    dcpeople?: GColumn[];
     //--------------------
 }

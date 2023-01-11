@@ -1,6 +1,7 @@
 export class UserDto {
-    readonly firstname: string;
-    readonly lastname: string;
-    readonly email: string;
-    readonly user_type: string;
+    firstname?: string;
+    lastname?: string;
+    email?: string;
+    user_type?: string;
+    user_id?:string;
 }
